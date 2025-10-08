@@ -4,14 +4,14 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./Home.css";
 
 const slides = [
-  { type: "image", src: "/images/loom1.png /", alt: "Powerloom weaving", title: "Precision in Every Thread", desc: "Expert job work weaving for modern textile demands." },
-  { type: "image", src: "/images/loom2.png /", alt: "Fabric production", title: "From Yarn to Fabric", desc: "Trusted by brands for quality and consistency." },
-  { type: "image", src: "/images/loom3.png /", alt: "Powerloom process", title: "Innovation in Weaving", desc: "Modern technology meets skilled craftsmanship." },
-  { type: "image", src: "/images/loom4.png /", alt: "Finishing section", title: "Finishing Excellence", desc: "Perfect texture, perfect touch." },
-  { type: "image", src: "/images/loom5.png /", alt: "Quality inspection", title: "Quality Beyond Measure", desc: "Every meter checked with care." },
-  { type: "video", src: "/videos/video1.mp4 /", title: "Power & Perfection", desc: "Our looms deliver excellence, meter by meter." },
-  { type: "video", src: "/videos/video2.mp4 /", title: "Dynamic Weaving in Action", desc: "Watch the rhythm of our textile machines." },
-  { type: "video", src: "/videos/video3.mp4 /", title: "Crafted with Care", desc: "Every roll reflects our dedication to excellence." },
+  { type: "image", src: `${import.meta.env.BASE_URL}images/loom1.png`, alt: "Powerloom weaving", title: "Precision in Every Thread", desc: "Expert job work weaving for modern textile demands." },
+  { type: "image", src: `${import.meta.env.BASE_URL}images/loom2.png`, alt: "Fabric production", title: "From Yarn to Fabric", desc: "Trusted by brands for quality and consistency." },
+  { type: "image", src: `${import.meta.env.BASE_URL}images/loom3.png`, alt: "Powerloom process", title: "Innovation in Weaving", desc: "Modern technology meets skilled craftsmanship." },
+  { type: "image", src: `${import.meta.env.BASE_URL}images/loom4.png`, alt: "Finishing section", title: "Finishing Excellence", desc: "Perfect texture, perfect touch." },
+  { type: "image", src: `${import.meta.env.BASE_URL}images/loom5.png`, alt: "Quality inspection", title: "Quality Beyond Measure", desc: "Every meter checked with care." },
+  { type: "video", src: `${import.meta.env.BASE_URL}videos/video1.mp4`, title: "Power & Perfection", desc: "Our looms deliver excellence, meter by meter." },
+  { type: "video", src: `${import.meta.env.BASE_URL}videos/video2.mp4`, title: "Dynamic Weaving in Action", desc: "Watch the rhythm of our textile machines." },
+  { type: "video", src: `${import.meta.env.BASE_URL}videos/video3.mp4`, title: "Crafted with Care", desc: "Every roll reflects our dedication to excellence." },
 ];
 
 const quotes = [
@@ -27,7 +27,9 @@ const Home = () => {
       <div className="text-center py-5 bg-primary text-white">
         <h1 className="display-4 fw-bold">Andal Textiles</h1>
         <p className="lead mt-3">"Where threads meet tradition and technology."</p>
-        <p className="mt-2 small">Contract Weaving | Custom Fabrics | Quality Finishing — Based in Erode, Tamil Nadu</p>
+        <p className="mt-2 small">
+          Contract Weaving | Custom Fabrics | Quality Finishing — Based in Erode, Tamil Nadu
+        </p>
       </div>
 
       {/* Carousel Section */}
